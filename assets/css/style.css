@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary: #0e854a;
+    --bg-color: rgba(100, 107, 100, 0.8);
+    --dark: #084025;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    --form-shadow: rgba(40, 167, 69, 0.25);
+}
+
+body {
+    font-size: 1.05rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 0.7rem 0.9rem;
+    border-width: 2px;
+
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(120%);
+}
+
+
+.hero {
+    background-image: url(../img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    z-index: -1;
+}
+
+section {
+    padding: 7.5rem 0;
+}
+
+.services {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.our-services {
+    font-size: 2.2rem;
+}
+
+.devider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: var(--primary);
+    opacity: 1;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 2rem;
+
+}
+
+.col-img {
+    background-image: url(../img/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project img {
+    transition: all 0.4s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.price-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-check-circle {
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+    color: var(--primary)
+}
+
+.team-member img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem var(--form-shadow);
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+.footer-top {
+    padding: 5.625rem 0;
+    background-color: var(--dark);
+}
+
+.footer-link {
+    color: var(--body);
+}
+
+.footer-link:hover {
+    color: var(--white);
+}
